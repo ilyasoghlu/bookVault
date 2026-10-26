@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A87761F-A385-43CD-9E19-CC3DEAF276F9}|..\\BookVault.Application.Test\\BookVault.Application.Test.csproj|c:\\users\\elshan.musa\\documents\\projects\\c# projects\\bookvault.application.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E8282E7-B9A4-EEAD-38B7-DF4C597ACF87}|..\\BookVault.Application\\BookVault.Application.csproj|c:\\users\\elshan.musa\\documents\\projects\\c# projects\\bookvault.application\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 308,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 308,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Application\\Services\\AuthorService.cs",
+              "RelativeDocumentMoniker": "..\\BookVault.Application\\Services\\AuthorService.cs",
+              "ToolTip": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Application\\Services\\AuthorService.cs",
+              "RelativeToolTip": "..\\BookVault.Application\\Services\\AuthorService.cs",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAIwAMBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T06:33:38.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Application.Test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\BookVault.Application.Test\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Application.Test\\UnitTest1.cs*",
+              "RelativeToolTip": "..\\BookVault.Application.Test\\UnitTest1.cs*",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwC4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T11:46:09.309Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

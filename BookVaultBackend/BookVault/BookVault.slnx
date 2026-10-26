@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../BookVault.Application.Test/BookVault.Application.Test.csproj" Id="0a87761f-a385-43cd-9e19-cc3deaf276f9" />
+  <Project Path="../BookVault.Application/BookVault.Application.csproj" />
+  <Project Path="../BookVault.Domain/BookVault.Domain.csproj" />
+  <Project Path="../BookVault.Infrastructure/BookVault.Infrastructure.csproj" />
+  <Project Path="BookVault.csproj" />
+</Solution>

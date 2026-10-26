@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "uYG7YuVvlVc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Domain\\BookVault.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\elshan.musa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.31\\microsoft.windowsdesktop.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\elshan.musa\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.31\\microsoft.netcore.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\elshan.musa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.31\\microsoft.aspnetcore.app.ref.8.0.31.nupkg.sha512"
+  ],
+  "logs": []
+}

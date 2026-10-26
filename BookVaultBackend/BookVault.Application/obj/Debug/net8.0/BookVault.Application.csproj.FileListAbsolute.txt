@@ -1,0 +1,16 @@
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\bin\Debug\net8.0\BookVault.Application.deps.json
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\bin\Debug\net8.0\BookVault.Application.dll
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\bin\Debug\net8.0\BookVault.Application.pdb
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\bin\Debug\net8.0\BookVault.Domain.dll
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\bin\Debug\net8.0\BookVault.Domain.pdb
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\obj\Debug\net8.0\BookVault.Application.csproj.AssemblyReference.cache
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\obj\Debug\net8.0\BookVault.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\obj\Debug\net8.0\BookVault.Application.AssemblyInfoInputs.cache
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\obj\Debug\net8.0\BookVault.Application.AssemblyInfo.cs
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\obj\Debug\net8.0\BookVault.Application.csproj.CoreCompileInputs.cache
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\obj\Debug\net8.0\BookVault.Application.sourcelink.json
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\obj\Debug\net8.0\BookVaul.5B0193AE.Up2Date
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\obj\Debug\net8.0\BookVault.Application.dll
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\obj\Debug\net8.0\refint\BookVault.Application.dll
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\obj\Debug\net8.0\BookVault.Application.pdb
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Application\obj\Debug\net8.0\ref\BookVault.Application.dll

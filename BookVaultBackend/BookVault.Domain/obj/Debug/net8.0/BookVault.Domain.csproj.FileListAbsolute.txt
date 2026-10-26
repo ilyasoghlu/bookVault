@@ -1,0 +1,12 @@
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\bin\Debug\net8.0\BookVault.Domain.deps.json
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\bin\Debug\net8.0\BookVault.Domain.dll
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\bin\Debug\net8.0\BookVault.Domain.pdb
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\obj\Debug\net8.0\BookVault.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\obj\Debug\net8.0\BookVault.Domain.AssemblyInfoInputs.cache
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\obj\Debug\net8.0\BookVault.Domain.AssemblyInfo.cs
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\obj\Debug\net8.0\BookVault.Domain.csproj.CoreCompileInputs.cache
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\obj\Debug\net8.0\BookVault.Domain.sourcelink.json
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\obj\Debug\net8.0\BookVault.Domain.dll
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\obj\Debug\net8.0\refint\BookVault.Domain.dll
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\obj\Debug\net8.0\BookVault.Domain.pdb
+C:\Users\elshan.musa\Documents\Projects\C# Projects\BookVault.Domain\obj\Debug\net8.0\ref\BookVault.Domain.dll
