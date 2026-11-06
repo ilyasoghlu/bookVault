@@ -900,11 +900,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Application\\BookVault.Application.csproj",
+      "projectUniqueName": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application\\BookVault.Application.csproj",
       "projectName": "BookVault.Application",
-      "projectPath": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Application\\BookVault.Application.csproj",
+      "projectPath": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application\\BookVault.Application.csproj",
       "packagesPath": "C:\\Users\\elshan.musa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Application\\obj\\",
+      "outputPath": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -926,8 +926,8 @@
           "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Domain\\BookVault.Domain.csproj": {
-              "projectPath": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Domain\\BookVault.Domain.csproj"
+            "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Domain\\BookVault.Domain.csproj": {
+              "projectPath": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Domain\\BookVault.Domain.csproj"
             }
           }
         }

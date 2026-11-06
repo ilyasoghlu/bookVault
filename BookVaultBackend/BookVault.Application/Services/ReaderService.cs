@@ -317,9 +317,11 @@ public class ReaderService : IReaderService
 
 		if (hasBorrowings)
 		{
-			// Borrowing history must remain intact.
-			// Therefore the Reader and User records cannot
-			// be physically deleted.
+			/*
+			 Borrowing history must remain intact.
+			 Therefore the Reader and User records cannot
+			 be physically deleted. 
+			*/
 
 			user.Isactive = false;
 			user.Isdeleted = true;

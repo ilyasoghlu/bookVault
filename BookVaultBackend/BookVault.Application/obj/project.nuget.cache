@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WtiRUk9Ijpc=",
+  "dgSpecHash": "q/QQ7GdX8+w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Application\\BookVault.Application.csproj",
+  "projectFilePath": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application\\BookVault.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elshan.musa\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\elshan.musa\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.19\\microsoft.aspnetcore.authorization.8.0.19.nupkg.sha512",

@@ -1,0 +1,30 @@
+# Visual Studio
+.vs/
+**/.vs/
+
+# .NET build files
+**/bin/
+**/obj/
+
+# Frontend dependencies
+**/node_modules/
+
+# Next.js
+**/.next/
+**/out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+**/dist/
+**/build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

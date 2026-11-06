@@ -8,10 +8,12 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace BookVault.Application.Test
 {
-	public class UnitTest1
+	public class BookServiceTest
 	{
 		//todo: inmemorydatabase for testing
 		//todo: use constructor injection for the repositories and service
+
+
 		//private readonly Mock<IBookRepository> _bookRepository;
 		//private readonly Mock<IAuthorRepository> _authorRepository;
 		//private readonly Mock<IPublisherRepository> _publisherRepository;
@@ -29,7 +31,7 @@ namespace BookVault.Application.Test
 		//		_bookRepository.Object,
 		//		_authorRepository.Object,
 		//		_publisherRepository.Object,
-		//		_shelfRepository.Object);
+		//		_shelfRepository.Object	
 		//}
 		[Fact]
 		public async Task GetByIdAsync_WhenBookDoesNotExist_ThrowsNotFoundException()

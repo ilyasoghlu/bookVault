@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ScrV8v1crkQ=",
+  "dgSpecHash": "fOboA5WLF2Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\elshan.musa\\Documents\\Projects\\C# Projects\\BookVault.Application.Test\\BookVault.Application.Test.csproj",
+  "projectFilePath": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application.Test\\BookVault.Application.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elshan.musa\\.nuget\\packages\\castle.core\\5.2.1\\castle.core.5.2.1.nupkg.sha512",
     "C:\\Users\\elshan.musa\\.nuget\\packages\\coverlet.collector\\10.1.0\\coverlet.collector.10.1.0.nupkg.sha512",
