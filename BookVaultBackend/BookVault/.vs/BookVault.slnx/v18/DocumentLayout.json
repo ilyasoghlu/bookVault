@@ -3,13 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0A87761F-A385-43CD-9E19-CC3DEAF276F9}|..\\BookVault.Application.Test\\BookVault.Application.Test.csproj|c:\\users\\elshan.musa\\documents\\projects\\bookvaultproject\\bookvaultbackend\\bookvault.application.test\\sectionservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E8282E7-B9A4-EEAD-38B7-DF4C597ACF87}|..\\BookVault.Application\\BookVault.Application.csproj|c:\\users\\elshan.musa\\documents\\projects\\bookvaultproject\\bookvaultbackend\\bookvault.application\\services\\sectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A87761F-A385-43CD-9E19-CC3DEAF276F9}|..\\BookVault.Application.Test\\BookVault.Application.Test.csproj|c:\\users\\elshan.musa\\documents\\projects\\bookvaultproject\\bookvaultbackend\\bookvault.application.test\\authorservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A87761F-A385-43CD-9E19-CC3DEAF276F9}|..\\BookVault.Application.Test\\BookVault.Application.Test.csproj|c:\\users\\elshan.musa\\documents\\projects\\bookvaultproject\\bookvaultbackend\\bookvault.application.test\\employeeservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E8282E7-B9A4-EEAD-38B7-DF4C597ACF87}|..\\BookVault.Application\\BookVault.Application.csproj|c:\\users\\elshan.musa\\documents\\projects\\bookvaultproject\\bookvaultbackend\\bookvault.application\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A87761F-A385-43CD-9E19-CC3DEAF276F9}|..\\BookVault.Application.Test\\BookVault.Application.Test.csproj|c:\\users\\elshan.musa\\documents\\projects\\bookvaultproject\\bookvaultbackend\\bookvault.application.test\\readerservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,9 +21,22 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 495,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 460,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SectionServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application.Test\\SectionServiceTest.cs",
+              "RelativeDocumentMoniker": "..\\BookVault.Application.Test\\SectionServiceTest.cs",
+              "ToolTip": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application.Test\\SectionServiceTest.cs",
+              "RelativeToolTip": "..\\BookVault.Application.Test\\SectionServiceTest.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAIwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T10:51:16.712Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -31,47 +47,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EmployeeServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application.Test\\EmployeeServiceTest.cs",
               "RelativeDocumentMoniker": "..\\BookVault.Application.Test\\EmployeeServiceTest.cs",
-              "ToolTip": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application.Test\\EmployeeServiceTest.cs*",
-              "RelativeToolTip": "..\\BookVault.Application.Test\\EmployeeServiceTest.cs*",
-              "ViewState": "AgIAACsCAAAAAAAAAAAQwEICAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application.Test\\EmployeeServiceTest.cs",
+              "RelativeToolTip": "..\\BookVault.Application.Test\\EmployeeServiceTest.cs",
+              "ViewState": "AgIAAIoDAAAAAAAAAAAwwJ8DAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T11:07:24.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T11:07:24.22Z"
             }
           ]
         },
         {
-          "DockedWidth": 372,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 407,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReaderServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application.Test\\ReaderServiceTest.cs",
-              "RelativeDocumentMoniker": "..\\BookVault.Application.Test\\ReaderServiceTest.cs",
-              "ToolTip": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application.Test\\ReaderServiceTest.cs",
-              "RelativeToolTip": "..\\BookVault.Application.Test\\ReaderServiceTest.cs",
-              "ViewState": "AgIAAM0CAAAAAAAAAAAiwL0AAABEAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "SectionService.cs",
+              "DocumentMoniker": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application\\Services\\SectionService.cs",
+              "RelativeDocumentMoniker": "..\\BookVault.Application\\Services\\SectionService.cs",
+              "ToolTip": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application\\Services\\SectionService.cs",
+              "RelativeToolTip": "..\\BookVault.Application\\Services\\SectionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-28T08:07:13.549Z",
+              "WhenOpened": "2026-11-13T10:50:49.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeService.cs",
-              "DocumentMoniker": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application\\Services\\EmployeeService.cs",
-              "RelativeDocumentMoniker": "..\\BookVault.Application\\Services\\EmployeeService.cs",
-              "ToolTip": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application\\Services\\EmployeeService.cs",
-              "RelativeToolTip": "..\\BookVault.Application\\Services\\EmployeeService.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAADwv6kAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AuthorServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application.Test\\AuthorServiceTest.cs",
+              "RelativeDocumentMoniker": "..\\BookVault.Application.Test\\AuthorServiceTest.cs",
+              "ToolTip": "C:\\Users\\elshan.musa\\Documents\\Projects\\BookVaultProject\\BookVaultBackend\\BookVault.Application.Test\\AuthorServiceTest.cs",
+              "RelativeToolTip": "..\\BookVault.Application.Test\\AuthorServiceTest.cs",
+              "ViewState": "AgIAAGYDAAAAAAAAAAAIwGkDAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T07:55:08.541Z",
+              "WhenOpened": "2026-11-13T05:13:12.696Z",
               "EditorCaption": ""
             }
           ]

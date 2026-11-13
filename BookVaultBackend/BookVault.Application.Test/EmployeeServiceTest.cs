@@ -599,5 +599,424 @@ namespace BookVault.Application.Test
 
 
 		}
+
+
+		// Update Async Tests
+
+		[Fact]
+		public async Task UpdateAsync_WhenEmployeeDoesnotExist_ThrowsNotFoundException()
+		{
+			// Arrange
+			var employeeId = 1;
+
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(employeeId))
+				.ReturnsAsync((Employee)null);
+
+			//Act & Assert
+
+			await Assert.ThrowsAsync<NotFoundException>(
+				() => _employeeService.UpdateAsync(employeeId, new UpdateEmployeeDto()));
+
+			// Verify
+
+			_employeeRepositoryMock.Verify(
+				repo => repo.GetByIdAsync(employeeId),
+				Times.Once);
+
+		}
+
+		[Fact]
+
+		public async Task UpdateAsync_WhenFirstnameIsNullOrWhitespace_ThrowsBadRequestException()
+		{
+			// Arrange
+			var employeeId = 1;
+			var existingEmployee = new Employee
+			{
+				Id = employeeId,
+				Firstname = "John",
+				Lastname = "Doe"
+			};
+
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(employeeId))
+				.ReturnsAsync(existingEmployee);
+
+			// Act & Assert
+			await Assert.ThrowsAsync<BadRequestException>(
+				() => _employeeService.UpdateAsync(
+					employeeId,
+					new UpdateEmployeeDto
+					{
+						Firstname = "   "
+					}));
+
+			// Verify
+			_employeeRepositoryMock.Verify(
+				repo => repo.GetByIdAsync(employeeId),
+				Times.Once);
+		}
+
+		[Fact]
+
+		public async Task UpdateAsync_WhenLastnameIsNullOrWhitespace_ThrowsBadRequestException()
+		{
+			// Arrange
+			var employeeId = 1;
+			var existingEmployee = new Employee
+			{
+				Id = employeeId,
+				Firstname = "John",
+				Lastname = "Doe"
+			};
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(employeeId))
+				.ReturnsAsync(existingEmployee);
+			// Act & Assert
+			await Assert.ThrowsAsync<BadRequestException>(
+				() => _employeeService.UpdateAsync(
+					employeeId,
+					new UpdateEmployeeDto
+					{
+						Lastname = "   "
+					}));
+			// Verify
+			_employeeRepositoryMock.Verify(
+				repo => repo.GetByIdAsync(employeeId),
+				Times.Once);
+		}
+
+		[Fact]
+
+		public async Task UpdateAsync_WhenEmployeeEmailIsNullOrWhitespace_ThrowsBadRequestException()
+		{
+			// Arrange
+			var employeeId = 1;
+			var existingEmployee = new Employee
+			{
+				Id = employeeId,
+				Firstname = "John",
+				Lastname = "Doe",
+				Email = "john.doe@example.com"
+			};
+
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(employeeId))
+				.ReturnsAsync(existingEmployee);
+
+			var updateEmployeeDto = new UpdateEmployeeDto
+			{
+				Firstname = "Jane",
+				Lastname = "Smith",
+				Email = " "
+			};
+			// Act & Assert
+
+			await Assert.ThrowsAsync<BadRequestException>(
+				() => _employeeService.UpdateAsync(
+					employeeId,
+					new UpdateEmployeeDto
+					{
+						Firstname = "Jane",
+						Lastname = "Smith",
+						Email = " "
+					}));
+			// Verify
+
+			_employeeRepositoryMock.Verify(
+				repo => repo.GetByIdAsync(employeeId),
+				Times.Once);
+		}
+
+		[Fact]
+
+		public async Task UpdateAsync_WhenEmployeeHiredateIsInTheFuture_ThrowsBadRequestException()
+		{
+			// Arrange
+			var employeeId = 1;
+			var existingEmployee = new Employee
+			{
+				Id = employeeId,
+				Firstname = "John",
+				Lastname = "Doe",
+				Hiredate = DateOnly.FromDateTime(DateTime.UtcNow)
+			};
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(employeeId))
+				.ReturnsAsync(existingEmployee);
+
+			// Act & Assert
+			await Assert.ThrowsAsync<BadRequestException>(
+				() => _employeeService.UpdateAsync(
+					employeeId,
+					new UpdateEmployeeDto
+					{
+						Hiredate = DateOnly.FromDateTime(DateTime.UtcNow.AddDays(1)) // Future hire date
+					}));
+
+			// Verify
+			_employeeRepositoryMock.Verify(
+				repo => repo.GetByIdAsync(employeeId),
+				Times.Once);
+		}
+
+
+		[Fact]
+		public async Task UpdateAsync_WhenEmployeeEnddateIsEarlierThanHiredate_ThrowsBadRequestException()
+		{
+			// Arrange
+			var employeeId = 1;
+			var existingEmployee = new Employee
+			{
+				Id = employeeId,
+				Firstname = "John",
+				Lastname = "Doe",
+				Hiredate = DateOnly.FromDateTime(DateTime.UtcNow)
+			};
+
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(employeeId))
+				.ReturnsAsync(existingEmployee);
+
+			// Act & Assert
+			await Assert.ThrowsAsync<BadRequestException>(
+				() => _employeeService.UpdateAsync(
+					employeeId,
+					new UpdateEmployeeDto
+					{
+						Hiredate = DateOnly.FromDateTime(DateTime.UtcNow),
+						Enddate = DateOnly.FromDateTime(DateTime.UtcNow.AddDays(-1)) // End date earlier than hire date
+					}));
+
+			// Verify
+			_employeeRepositoryMock.Verify(
+				repo => repo.GetByIdAsync(employeeId),
+				Times.Once);
+		}
+
+
+		[Fact]
+		public async Task UpdateAsync_WhenEmployeeEmailAlreadyExists_ThrowsConflictException()
+		{
+			// Arrange
+			var employeeId = 1;
+			var existingEmployee = new Employee
+			{
+				Id = employeeId,
+				Firstname = "John",
+				Lastname = "Doe",
+				Email = "john.doe@example.com"
+			};
+
+			var anotherEmployee = new Employee
+			{
+				Id = 2,
+				Firstname = "Jane",
+				Lastname = "Smith",
+				Email = "jane.smith@example.com"
+			};
+
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(employeeId))
+				.ReturnsAsync(existingEmployee);
+
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByEmailAsync("jane.smith@example.com"))
+				.ReturnsAsync(anotherEmployee);
+
+			// Act & Assert
+
+			await Assert.ThrowsAsync<ConflictException>(
+				() => _employeeService.UpdateAsync(
+					employeeId,
+					new UpdateEmployeeDto
+					{
+						Firstname = "John",
+						Lastname = "Doe",
+						Email = "jane.smith@example.com"
+
+					}));
+
+			// Verify
+			_employeeRepositoryMock.Verify(
+				repo => repo.GetByIdAsync(employeeId),
+				Times.Once);
+		}
+
+		//[Fact]
+		//public async Task WhenEmployeeUserAccountNotFound_ShouldThrowNotFoundException()
+		//{
+		//	// Arrange
+		//	var employeeId = 1;
+		//	var existingEmployee = new Employee
+		//	{
+		//		Id = employeeId
+		//	};
+
+		//	_employeeRepositoryMock
+		//		.Setup(repo => repo.GetUserAccountByEmployeeIdAsync(employeeId))
+		//		.ReturnsAsync((UserAccount)null);
+
+		//	// Act & Assert
+		//	await Assert.ThrowsAsync<NotFoundException>(
+		//		() => _employeeService.UpdateAsync(
+		//			employeeId,
+		//			new UpdateEmployeeDto
+		//			{
+		//				Firstname = "John",
+		//				Lastname = "Doe",
+		//				Email = "john.doe@example.com"
+		//			}));
+
+		//	// Verify
+		//	_employeeRepositoryMock.Verify(
+		//		repo => repo.GetByIdAsync(employeeId),
+		//		Times.Once);
+		//}
+
+
+		// Delete Async Tests	
+
+
+		[Fact]
+
+		public async Task DeleteAsync_WhenEmployeeDoesNotExist_ThrowsNotFoundException()
+		{
+			// Arrange
+			var employeeId = 1;
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(employeeId))
+				.ReturnsAsync((Employee)null);
+			// Act & Assert
+			await Assert.ThrowsAsync<NotFoundException>(
+				() => _employeeService.DeleteAsync(employeeId));
+			// Verify
+			_employeeRepositoryMock.Verify(
+				repo => repo.GetByIdAsync(employeeId),
+				Times.Once);
+		}
+
+		[Fact]
+
+		public async Task DeleteAsync_WhenEmployeeExists_ShouldDeleteEmployeeAndUser()
+		{
+			// Arrange
+			var employeeId = 1;
+			var existingEmployee = new Employee
+			{
+				Id = employeeId,
+				UserId = Guid.NewGuid()
+			};
+			var existingUser = new User
+			{
+				Id = existingEmployee.UserId
+			};
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(employeeId))
+				.ReturnsAsync(existingEmployee);
+			_userRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(existingEmployee.UserId))
+				.ReturnsAsync(existingUser);
+			// Act
+			await _employeeService.DeleteAsync(employeeId);
+			// Assert
+			_employeeRepositoryMock.Verify(
+				repo => repo.Delete(existingEmployee),
+				Times.Once);
+			_userRepositoryMock.Verify(
+				repo => repo.Delete(existingUser),
+				Times.Once);
+			_employeeRepositoryMock.Verify(
+				repo => repo.SaveAsync(),
+				Times.Once);
+		}
+
+
+		[Fact]
+
+		public async Task DeleteAsync_WhenEmployeeExistsButUserDoesNotExist_ShouldDeleteEmployeeOnly()
+		{
+			// Arrange
+			var employeeId = 1;
+			var existingEmployee = new Employee
+			{
+				Id = employeeId,
+				UserId = Guid.NewGuid()
+			};
+
+
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(employeeId))
+				.ReturnsAsync(existingEmployee);
+
+			_userRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(existingEmployee.UserId))
+				.ReturnsAsync((User)null);
+
+			// Act
+			await _employeeService.DeleteAsync(employeeId);
+
+			// Assert
+
+			_employeeRepositoryMock.Verify(
+				repo => repo.Delete(existingEmployee),
+				Times.Once);
+
+			_userRepositoryMock.Verify(
+				repo => repo.Delete(It.IsAny<User>()),
+				Times.Never);
+
+			_employeeRepositoryMock.Verify(
+				repo => repo.SaveAsync(),
+				Times.Once);
+		}
+
+		[Fact]
+
+		public async Task DeleteAsync_WhenEmployeeExistsAndUserExists_ShouldDeleteBoth()
+		{
+			// Arrange
+			var employeeId = 1;
+			var existingEmployee = new Employee
+			{
+				Id = employeeId,
+				UserId = Guid.NewGuid()
+			};
+
+			var existingUser = new User
+			{
+				Id = existingEmployee.UserId
+			};
+
+			_employeeRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(employeeId))
+				.ReturnsAsync(existingEmployee);
+
+			_userRepositoryMock
+				.Setup(repo => repo.GetByIdAsync(existingEmployee.UserId))
+				.ReturnsAsync(existingUser);
+
+			// Act
+			await _employeeService.DeleteAsync(employeeId);
+
+			// Assert
+
+			_employeeRepositoryMock.Verify(
+				repo => repo.Delete(existingEmployee),
+				Times.Once);
+
+			_userRepositoryMock.Verify(
+				repo => repo.Delete(existingUser),
+				Times.Once);
+
+			_employeeRepositoryMock.Verify(
+				repo => repo.SaveAsync(),
+				Times.Once);
+		}
+
+
+		
+
 	}
 }

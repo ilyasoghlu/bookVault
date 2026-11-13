@@ -22,3 +22,4 @@ C:\Users\elshan.musa\Documents\Projects\BookVaultProject\BookVaultBackend\BookVa
 C:\Users\elshan.musa\Documents\Projects\BookVaultProject\BookVaultBackend\BookVault.Domain\obj\Debug\net8.0\refint\BookVault.Domain.dll
 C:\Users\elshan.musa\Documents\Projects\BookVaultProject\BookVaultBackend\BookVault.Domain\obj\Debug\net8.0\BookVault.Domain.pdb
 C:\Users\elshan.musa\Documents\Projects\BookVaultProject\BookVaultBackend\BookVault.Domain\obj\Debug\net8.0\ref\BookVault.Domain.dll
+C:\Users\elshan.musa\Documents\Projects\BookVaultProject\BookVaultBackend\BookVault.Domain\obj\Debug\net8.0\BookVaul.E16B0658.Up2Date
